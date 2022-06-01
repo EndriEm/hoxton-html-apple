@@ -2,36 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
+
     font-family: sans-serif;
-  }
-  
-  :root {
+}
+
+:root {
     --link-color: #2578d1;
-  }
-  
-  a {
+}
+
+a {
     color: var(--link-color);
     text-decoration: none;
-  }
-  
-  body {
+}
+
+body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-  }
-  
-  .header {
+}
+
+.header {
     background-color: #000000cc;
     color: white;
     position: sticky;
     top: 0;
-  
+
     backdrop-filter: blur(15px);
     z-index: 10;
-  }
-  
-  .header__nav-list {
+}
+
+.header__nav-list {
     display: grid;
     grid-auto-flow: column;
     list-style: none;
@@ -39,36 +39,36 @@
     justify-content: center;
     gap: 2rem;
     align-items: center;
-  }
-  
-  .header__nav-link {
+}
+
+.header__nav-link {
     color: #ffffffaa;
     text-decoration: none;
-  }
-  
-  .header__apple-logo {
+}
+
+.header__apple-logo {
     width: 20px;
     filter: invert(0.8);
-  }
-  
-  .main {
+}
+
+.main {
     display: grid;
     grid-template-columns: 1fr;
-  }
-  
-  .top-section {
+}
+
+.top-section {
     text-align: center;
-  }
-  
-  .top-section__header {
+}
+
+.top-section__header {
     background-color: #f5f5f7;
     padding: 1rem;
-  
+
     position: sticky;
     top: 50px;
-  }
-  
-  .top-section__wrapper {
+}
+
+.top-section__wrapper {
     background-image: url(assets/iphone13.jpg);
     background-size: 500px;
     background-position: center bottom;
@@ -76,101 +76,211 @@
     height: 500px;
     background-color: #fbfbfd;
     padding: 1rem;
-  
+
     display: grid;
     align-content: start;
     gap: 0.5rem;
-  }
-  
-  .top-section .title {
+}
+
+.top-section .title {
     font-size: 3rem;
-  }
-  
-  .top-section .subtitle {
+}
+
+.top-section .subtitle {
     font-size: 1.8rem;
     font-weight: 500;
-  }
-  
-  .top-section__nav-list {
+}
+
+.top-section__nav-list {
     list-style: none;
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
     gap: 1rem;
-  }
-  
-  .top-section__nav-link {
+}
+
+.top-section__nav-link {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
     text-decoration: none;
     color: var(--link-color);
-  }
-  
-  .iphoneSE_section__wrapper{background-image: url(assets/iphone\ SE.jpeg);
+}
+
+.iphoneSE_section__wrapper {
+    background-image: url(assets/iphone\ SE.jpeg);
     background-size: 800px;
     background-position: center bottom;
     background-repeat: no-repeat;
     height: 500px;
     background-color: #fbfbfd;
     padding: 1rem;
-  
+
     display: grid;
     align-content: start;
     gap: 0.5rem;
 
-  }
+}
 
-  .iphoneSE-section{
-      text-align: center;
-      margin: 2rem;
+.iphoneSE-section {
+    text-align: center;
+    margin: 2rem;
 
 }
 
-.ipad-section{
-    text-align: center left;
+.ipad-section {
+    text-align: center;
     color: white;
-}
-  
-  .ipad_section__wrapper {background-image: url(assets/ipad.jpeg);
+    display: grid;
+    justify-content: start;
+    align-content: center;
+    background-image: url(assets/ipad.jpeg);
     background-size: 50%;
     background-position: right;
     background-repeat: no-repeat;
-    height: 600px;
     background-color: black;
+    height: 600px;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.ipad_section__wrapper {
     padding: 1rem;
-  
     display: grid;
     align-content: start;
     gap: 0.5rem;
-  }
-  
-  .product-grid-section {
+}
+
+.ipad-section__nav-list {
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.product-grid-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 300px;
+    grid-auto-rows: 500px;
     gap: 0.5rem;
-  }
-  
-  .product-item {
+
+}
+
+.product-item {
     border: 1px solid #000;
-  }
-  
-  .footer {
-  }
-  
-  .floating-chat {
+}
+
+
+.iphone13-product-item {
+    background-image: url(assets/iph13.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-color: #fbfbfd;
+    padding: 1rem;
+    display: grid;
+    align-content: start;
+    gap: 0.5rem;
+    text-align: center;
+
+}
+
+.iphone13-nav-list {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.watch-product-item {
+    background-image: url(assets/promo_watch_lte__djeaso7ukrsm_small.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-color: #fbfbfd;
+    padding: 1rem;
+    display: grid;
+    align-content: start;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.watch-nav-list {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.card-product-item {
+    background-image: url(assets/card.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-color: #fbfbfd;
+    padding: 1rem;
+    display: grid;
+    align-content: start;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.card-nav-list {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.trade-product-item {
+    background-image: url(assets/multi.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-color: #fbfbfd;
+    padding: 1rem;
+    display: grid;
+    align-content: start;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+
+.footer {
+    padding: 1rem;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.floating-chat {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
     z-index: 1;
-  
+
     background-color: white;
     padding: 1rem;
     border: 1px solid #000;
     border-radius: 50%;
-  }
-  
-  .floating-chat span {
+}
+
+.floating-chat span {
     font-size: 2rem;
-  }
+}
